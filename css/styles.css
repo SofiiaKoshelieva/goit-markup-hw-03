@@ -11,6 +11,24 @@
   --buttons-color-portfolio: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
@@ -24,7 +42,33 @@ body {
 .btn {
   cursor: pointer;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 /* !!!!!!!!!HEADER!!!!!!!!!!! */
+.header {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 .web {
   color: var(--accent-color);
   font-family: Raleway;
@@ -32,6 +76,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 94px;
 }
 .studio {
   color: var(--title-color);
@@ -61,24 +106,45 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
 }
+.header-container {
+  display: flex;
+}
 /* !!!!!!!!!!HERO!!!!!!!!!!!! */
+.hero-container {
+  padding-top: 211px;
+  padding-bottom: 200px;
+  padding-left: 425px;
+  background-color: var(--background-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
-  background-color: var(--background-color);
+  margin-bottom: 66px;
+  max-width: 602px;
 }
 .hero-button {
   background-color: var(--button-color);
   color: var(--button-text-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 /* !!!!!!!PLUSES!!!!!! */
+.pluses {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .pluses-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -165,6 +231,8 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
